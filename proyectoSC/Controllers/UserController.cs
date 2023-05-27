@@ -28,5 +28,14 @@ namespace proyectoSC.Controllers
                 Token = authResponse.Token
             });
         }
+
+        [HttpPut(ApiRoutes.User.Change)]
+        public async Task<IActionResult> ChangePassWord([FromBody] ChangePasswordRequest changePasswordRequest)
+        {
+            bool response = await _identityService.ChangePassword(changePasswordRequest.Mail, changePasswordRequest.OldPassword, changePasswordRequest.NewPassword);
+            if (response)
+                return Ok();
+            return BadRequest();
+        }
     }
 }

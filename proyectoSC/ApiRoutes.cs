@@ -8,6 +8,7 @@
         public static class User
         {
             public const string Login = "login";
+            public const string Recover = "recover";
         }
         public static class Files
         {
