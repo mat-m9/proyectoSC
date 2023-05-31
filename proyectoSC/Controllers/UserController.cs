@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using proyectoSC.ResponseModels;
 using proyectoSC.Services;
+using proyectoSC.ModelRequest;
 
 namespace proyectoSC.Controllers
 {

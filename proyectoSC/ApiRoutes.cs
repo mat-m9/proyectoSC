@@ -9,6 +9,7 @@
         {
             public const string Login = "login";
             public const string Recover = "recover";
+            public const string Change = "change";  
         }
         public static class Files
         {
